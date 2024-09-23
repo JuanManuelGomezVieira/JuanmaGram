@@ -1,7 +1,13 @@
 import {} from 'dotenv/config'
-import { validateEmail, validatePassword, ExistenceError, AuthError } from 'com'
-import { User } from '../data/models'
 import bcrypt from 'bcryptjs'
+import { validateEmail, validatePassword, errors } from '../../com/index.js'
+import { User } from '../data/models.js'
+
+// import validateEmail from '../../com/index.js'
+// import validatePassword from '../../com/index.js'
+// import errors from '../../com/index.js'
+
+const { AuthError, ExistenceError } = errors
 
 /**
  * Authenticate a user against their credentials

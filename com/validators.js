@@ -1,6 +1,6 @@
-import { errors } from './index'
+import { errors } from './index.js'
 
-const { ContentError } = errors
+const ContentError = errors.ContentError
 
 const EMAIL_REGEX = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 

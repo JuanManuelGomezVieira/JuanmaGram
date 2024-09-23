@@ -1,8 +1,12 @@
-import { validators, errors } from 'com'
-import { User } from '../data/models'
+import { validateName, validateEmail, validatePassword, errors } from '../../com/index.js'
 import bcrypt from 'bcryptjs'
+import { User } from '../data/models.js'
 
-const { validateName, validateEmail, validatePassword } = validators
+// import validateName from '../../com/index.js'
+// import validateEmail from '../../com/index.js'
+// import validatePassword from '../../com/index.js'
+// import errors from '../../com/index.js'
+
 const { DuplicityError } = errors
 
 export default (name, email, password) => {

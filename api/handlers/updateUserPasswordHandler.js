@@ -1,9 +1,9 @@
 import updateUserPassword from '../logic/updateUserPassword.js'
-import extractToken from '../helpers/extractToken.js'
+import extractUserId from './helpers/extractUserId.js'
 
 export default (req, res) => {
 	try {
-		const userId = extractToken(req)
+		const userId = extractUserId(req)
 
 		const { password, newPassword, newPasswordConfirm } = req.body
 

@@ -1,4 +1,6 @@
-import { DuplicityError, TypeError, ContentError, RangeError } from 'com'
+import { errors } from '../../../com/index.js'
+
+const { DuplicityError, ContentError, ExistenceError, AuthError, TypeError, RangeError } = errors
 
 export default callback => {
 	return (req, res) => {

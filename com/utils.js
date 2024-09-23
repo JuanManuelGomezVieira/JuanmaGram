@@ -1,4 +1,5 @@
-import { validateToken } from './index'
+// import validateToken from './index.js'
+import { validateToken } from './index.js'
 
 function extractPayloadFromToken(token) {
 	return JSON.parse(atob(token.split('.')[1]))

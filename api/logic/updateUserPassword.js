@@ -1,5 +1,8 @@
 import { readFile, writeFile } from 'fs'
 import { validateUserId, validatePassword, validateCallback } from 'com'
+// import validateUserId from '../../com/index.js'
+// import validatePassword from '../../com/index.js'
+// import validateCallback from '../../com/index.js'
 
 export default (id, password, newPassword, newPasswordConfirm, callback) => {
 	validateUserId(id)

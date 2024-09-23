@@ -1,5 +1,8 @@
-import { validateUserId, ExistenceError } from 'com'
-import { User } from '../data/models'
+import { validateUserId, errors } from '../../com/index.js'
+
+import { User } from '../data/models.js'
+
+const { ExistenceError } = errors
 
 /**
  * Retrieves a user by id

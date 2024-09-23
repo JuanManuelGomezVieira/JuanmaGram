@@ -1,5 +1,5 @@
-import { validateUserId } from 'com'
-import { User, Post } from '../data/models'
+import { validateUserId } from '../../com/index.js'
+import { User, Post } from '../data/models.js'
 
 export default userId => {
 	validateUserId(userId)

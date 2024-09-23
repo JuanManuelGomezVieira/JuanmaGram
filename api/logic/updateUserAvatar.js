@@ -1,5 +1,5 @@
 import { readFile, writeFile } from 'fs'
-import { validateUserId, validateCallback, validateUrl } from 'com'
+import { validateUserId, validateCallback, validateUrl } from '../../com/index.js'
 
 export default (id, avatar, callback) => {
 	validateUserId(id)

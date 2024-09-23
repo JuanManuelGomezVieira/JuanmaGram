@@ -8,22 +8,6 @@ const {
 	model,
 } = mongoose
 
-const paymentMethod = new Schema({
-	type: {
-		type: String,
-		enum: ['credit-card', 'paypal', 'apple-pay', 'google pay', 'crypto'],
-	},
-	name: {
-		type: String,
-	},
-	number: {
-		type: String,
-	},
-	expiryDate: {
-		type: Date,
-	},
-})
-
 const user = new Schema({
 	user: {
 		type: String,
@@ -51,7 +35,6 @@ const user = new Schema({
 		ref: 'post',
 		default: [],
 	},
-	paymentMethods: [paymentMethod],
 })
 
 const comment = new Schema({
@@ -105,14 +88,17 @@ const post = new Schema({
 })
 
 //Este código permite utilizar el modelo de datos que tiene mongoose por defecto, y si no existiera, crearíamos el modelo a mano según nuestra definición
-export const User = mongoose.models.User || model('User', user)
-export const Post = mongoose.models.Post || model('Post', post)
-export const Comment = mongoose.models.Comment || model('Comment', comment)
-export const PaymentMethod = mongoose.models.PaymentMethod || model('PaymentMethod', paymentMethod)
+// export const User = mongoose.models.User || model('User', user)
+// export const Post = mongoose.models.Post || model('Post', post)
+// export const Comment = mongoose.models.Comment || model('Comment', comment)
 
-/* Este código crea directamente los modelos de datos sin preguntar antes a mongoose si ya existe ese modelo
-export const User = model('User', user)
-export const Post = model('Post', post)
-export const Comment = model('Comment', comment)
-export const PaymentMethod = model('PaymentMethod', paymentMethod)
-*/
+// Este código crea directamente los modelos de datos sin preguntar antes a mongoose si ya existe ese modelo
+// export const User = model('User', user)
+// export const Post = model('Post', post)
+// export const Comment = model('Comment', comment)
+
+const User = model('User', user)
+const Post = model('Post', post)
+const Comment = model('Comment', comment)
+
+export { User, Post, Comment }
