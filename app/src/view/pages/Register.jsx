@@ -1,6 +1,6 @@
 import { Anchor, Button, Container, Form, Input } from '../library'
-import registerUser from '../../../logic/registerUser'
-import { useAppContext, useHandleErrors } from '../../hooks/index'
+import registerUser from '../../logic/registerUser'
+import { useAppContext, useHandleErrors } from '../hooks/index'
 import { Link } from 'react-router-dom'
 import { errors } from 'com'
 

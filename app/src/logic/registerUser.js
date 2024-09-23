@@ -1,4 +1,6 @@
-import { validateName, validateEmail, validatePassword, errors } from 'com'
+import { validateName, validateEmail, validatePassword, errors } from '../../../com/index'
+
+// import { validateName, validateEmail, validatePassword, errors } from 'com'
 
 export default (name, email, password) => {
 	validateName(name)

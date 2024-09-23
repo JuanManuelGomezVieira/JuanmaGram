@@ -1,4 +1,4 @@
-import { validateEmail, validatePassword, errors } from 'com'
+import { validateEmail, validatePassword, errors } from '../../../com/index'
 import context from './context'
 
 /**
@@ -9,6 +9,7 @@ import context from './context'
  *
  * @returns {string} The user's id
  */
+
 export default (email, password) => {
 	validateEmail(email)
 	validatePassword(password)

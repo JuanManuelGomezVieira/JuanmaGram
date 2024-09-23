@@ -1,4 +1,4 @@
-import { validateToken, validateUserId } from 'com'
+import { validateToken, validateUserId } from '../../../com/index'
 
 export default function retrievePost(token, postId) {
 	validateToken(token)

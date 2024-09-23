@@ -1,4 +1,4 @@
-import { validateUserId, validateCallback } from './helpers/validators'
+import { validateUserId, validateCallback } from '../../../com/index'
 import { saveUser, findUserById, findPostById } from '../data'
 
 /**

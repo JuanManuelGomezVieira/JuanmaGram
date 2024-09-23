@@ -1,4 +1,4 @@
-import { validateUserId, validateUrl, validateCallback } from './helpers/validators'
+import { validateUserId, validateUrl, validateCallback } from '../../../com/index'
 
 /**
  * Update user's avatar in Users array

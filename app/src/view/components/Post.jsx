@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
-import retrieveUser from '../../../logic/retrieveUser'
+import retrieveUser from '../../logic/retrieveUser'
+import toggleLikePost from '../../logic/toggleLikePost'
+import deletePost from '../../logic/deletePost'
+import toggleFavPost from '../../logic/toggleFavPost'
+import isCurrentUser from '../../logic/isCurrentUser'
+import getUserId from '../../logic/getUserId'
 import { context } from '../../ui'
-import toggleLikePost from '../../../logic/toggleLikePost'
-import deletePost from '../../../logic/deletePost'
-import toggleFavPost from '../../../logic/toggleFavPost'
 import { Container } from '../library'
 import {useAppContext} from '../hooks/index'
-import isCurrentUser from '../../../logic/isCurrentUser'
-import getUserId from '../../../logic/getUserId'
 
 export default function Post({ post: {id, image, text, date, likes, author, fav}, onEditPost, onToggledLikePost, onPostDeleted, onToggledFavPost }) {
     console.debug('Post -> Render')

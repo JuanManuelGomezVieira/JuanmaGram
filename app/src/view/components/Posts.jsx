@@ -1,6 +1,6 @@
-import retrievePosts from '../../../logic/retrievePosts'
-import Post from './Post'
 import { useState, useEffect } from 'react'
+import Post from './Post'
+import retrievePosts from '../../logic/retrievePosts'
 import {useAppContext} from '../hooks/index'
 
 

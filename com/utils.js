@@ -1,4 +1,4 @@
-import { validateToken } from './validators'
+import { validateToken } from './index'
 
 function extractPayloadFromToken(token) {
 	return JSON.parse(atob(token.split('.')[1]))
@@ -27,4 +27,4 @@ function extractSubFromToken(token) {
 	return sub
 }
 
-module.exports = { isTokenAlive, isTokenValid, extractSubFromToken }
+export { isTokenAlive, isTokenValid, extractSubFromToken }

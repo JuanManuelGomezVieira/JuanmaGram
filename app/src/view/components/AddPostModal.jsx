@@ -1,6 +1,6 @@
-import createPost from '../../../logic/createPost'
 import { Button, Container, Input } from '../library'
 import {useAppContext} from '../hooks/index'
+import createPost from '../../logic/createPost'
 
 export default function AddPostModal({ onPostCreated, onCancel }) {
 	console.debug('AddPostModal -> Render')

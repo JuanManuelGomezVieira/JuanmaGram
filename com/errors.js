@@ -38,4 +38,4 @@ class AuthError extends Error {
 	}
 }
 
-module.exports = { DuplicityError, ContentError, ExistenceError, AuthError }
+export default { DuplicityError, ContentError, ExistenceError, AuthError }

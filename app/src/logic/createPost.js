@@ -1,4 +1,4 @@
-import { validateUrl, validateText } from './helpers/validators'
+import { validateUrl, validateText } from '../../../com/index'
 import context from './context'
 
 export default (image, text) => {

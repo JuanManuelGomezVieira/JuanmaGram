@@ -2,11 +2,12 @@ import { useState, useEffect } from 'react'
 import Posts from '../components/Posts'
 import AddPostModal from '../components/AddPostModal'
 import Profile from '../components/Profile'
-import retrieveUser from '../../../logic/retrieveUser'
 import EditPostModal from '../components/EditPostModal'
-import {useAppContext} from '../../hooks/index'
+import {useAppContext} from '../hooks/index'
+import retrieveUser from '../../logic/retrieveUser'
+import logoutUser from '../../logic/logoutUser'
 import './Home.css'
-import logoutUser from '../../../logic/logoutUser'
+
 
 export default function Home (/*{ onLoggedOut }*/) {
     console.debug('Home -> Render')

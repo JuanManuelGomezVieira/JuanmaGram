@@ -1,8 +1,8 @@
-import { context } from '../../ui'
-import updateUserAvatar from '../../../logic/updateUserAvatar'
-import updateUserPassword from '../../../logic/updateUserPassword'
 import { Button, Container, Form, Input } from '../library'
 import {useAppContext} from '../hooks/index'
+import { context } from '../../ui'
+import updateUserAvatar from '../../logic/updateUserAvatar'
+import updateUserPassword from '../../logic/updateUserPassword'
 
 export default function Profile({ onUserAvatarUpdated, onUserPasswordUpdated, onLoggedOut }) {
 	console.debug('Profile -> Render')

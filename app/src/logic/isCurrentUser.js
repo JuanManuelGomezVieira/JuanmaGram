@@ -1,7 +1,5 @@
-import { utils } from 'com'
+import { extractSubFromToken } from '../../../com/index'
 import context from './context'
-
-const { extractSubFromToken } = utils
 
 export default userId => userId === extractSubFromToken(context.token)
 // export default (userId) => userId === extractSubFromToken(context.token)

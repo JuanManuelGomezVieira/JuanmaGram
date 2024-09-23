@@ -1,6 +1,4 @@
 import context from './context'
-import utils from 'com'
-
-const { isTokenAlive, isTokenValid } = utils
+import { isTokenAlive, isTokenValid } from '../../../com/index'
 
 export default () => isTokenValid(context.token) && isTokenAlive(context.token)

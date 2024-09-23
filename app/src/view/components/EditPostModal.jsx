@@ -1,6 +1,6 @@
 import { context } from '../../ui'
-import updatePost from '../../../logic/updatePost'
-import retrievePost from '../../../logic/retrievePost'
+import updatePost from '../../logic/updatePost'
+import retrievePost from '../../logic/retrievePost'
 import { useState, useEffect } from 'react'
 import { Button, Container, Input } from '../library'
 import {useAppContext} from '../hooks/index'
