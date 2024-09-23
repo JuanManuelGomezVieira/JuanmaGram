@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* library */
+:root {
+	--basecolor: 12, 12, 12;
+	--basebgcolor: 255, 255, 255;
+	--button_color: 255, 255, 255;
+	--button_bgcolor: 76, 181, 246;
+	--input_color: 0, 0, 0;
+	--input_bgcolor: 245, 245, 245;
+	--input_border: 219, 219, 219;
+	--material_icon_color: 0, 0, 0;
+	--separator_line: 73, 73, 73;
+	/* 0.862 en material icon color */
+}
+
+:root.dark {
+	--basecolor: rgb(245, 245, 245);
+	--basebgcolor: rgb(0, 0, 0);
+	--button-color: #ffffff;
+	--button-bgcolor: #337ba8;
+	--input-color: #000000;
+	--input-bgcolor: #e3e3e3;
+	--input-border: #bebebe;
+	--material-icon-color: rgb(255, 255, 255);
+}
+
+.off {
+	display: none !important;
+}
+
+body.block-scroll {
+	overflow: hidden;
+}
+
+.title {
+	color: var(--basecolor);
+}
+
+/* .input {
+margin-top: 7px;
+padding: 9px;
+border-radius: 3px;
+font-size: 12px;
+color: var(--input-color);
+background-color: var(--input-bgcolor);
+border: 1px solid var(--input-border);
+} */
+
+/* .button {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0px;
+} */
+
+/* .submit {
+	margin-top: 12px;
+	padding: 9px;
+	border-radius: 8px;
+	border: 0px;
+	color: var(--button-color);
+	background-color: var(--button-bgcolor);
+	font-size: 16px;
+	font-weight: 500;
+} */
+
+/* .form-anchor {
+margin-top: 12px;
+color: var(--button-bgcolor);
+font-size: 16px;
+font-weight: 400;
+text-align: center;
+cursor: pointer;
+} */
+
+.modal {
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 10;
+}
+
+/* Fonts */
+h1,
+h2,
+a,
+button,
+input,
+textarea,
+p,
+time,
+div {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Media Queries */
+@media screen and (min-width: 470px) {
+	.single-post {
+		width: 470px;
+	}
+
+	.post-image,
+	.post-image-preview {
+		width: 468px;
+	}
+}
+
+/* Material Icons */
+
+.material-symbols-outlined {
+	color: var(--material-icon-color);
+	font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-filled {
+	color: var(--material-icon-color);
+	font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
