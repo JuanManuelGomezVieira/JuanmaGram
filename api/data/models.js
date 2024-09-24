@@ -9,7 +9,7 @@ const {
 } = mongoose
 
 const user = new Schema({
-	user: {
+	name: {
 		type: String,
 		required: true,
 		trim: true,

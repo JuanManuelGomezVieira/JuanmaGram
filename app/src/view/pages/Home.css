@@ -1,9 +1,9 @@
 :root {
-	--separator_line: 1px solid #49494970;
+	--separator_line: 1px solid #dbdbdb;
 }
 
 :root.dark {
-	--separator_line: 1px solid #ececec58;
+	--separator_line: 1px solid #363636;
 }
 
 .home {

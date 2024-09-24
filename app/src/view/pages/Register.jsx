@@ -48,7 +48,7 @@ export default function Register (/*{ onLoginClick, onUserRegistered }*/) {
             <Input type="email" name="email" placeholder="Email" autoComplete="email" />
             <Input type="password" name="password" placeholder="Password" autoComplete="current-password" />
             <Button type="submit" >Register</Button>
-            <Anchor><Link to="/register">Have an account? Go login</Link></Anchor>
+            <Anchor><Link to="/login">Have an account? Go login</Link></Anchor>
         </Form>
     </Container>
 }

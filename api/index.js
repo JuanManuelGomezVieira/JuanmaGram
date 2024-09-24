@@ -5,9 +5,13 @@ import bodyParser from 'body-parser'
 import express from 'express'
 import { addCommentToPostHandler, removeCommentFromPostHandler, helloApiHandler, registerUserHandler, authenticateUserHandler, retrieveUserHandler, retrievePostHandler, retrievePostsHandler, updateUserAvatarHandler, updateUserPasswordHandler, createPostHandler } from './handlers/index.js'
 
+const port = process.env.PORT || 4000
+
 mongoose
 	.connect(process.env.MONGODB_URL)
 	.then(() => {
+		console.log('Connected to MongoDB Atlas')
+
 		const api = express()
 
 		const jsonBodyParser = bodyParser.json()
@@ -38,6 +42,6 @@ mongoose
 
 		api.delete('/posts/:postId/comments/:commentId', removeCommentFromPostHandler)
 
-		api.listen(process.env.PORT, () => console.log(`server running in port ${process.env.PORT}`))
+		api.listen(port, () => console.log(`server running in port ${port}`))
 	})
-	.catch(console.error)
+	.catch(error => console.error(error))
