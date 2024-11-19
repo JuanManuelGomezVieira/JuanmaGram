@@ -11,11 +11,12 @@ const { ExistenceError } = errors
  *
  * @returns {Promise<Object>}
  */
+
 export default userId => {
 	validateUserId(userId)
 
 	return (async () => {
-		const user = await User.findById(userId, 'name avatar'.lean())
+		const user = await User.findById(userId, 'name avatar').lean()
 
 		if (!user) throw new ExistenceError('user not found')
 

@@ -1,6 +1,6 @@
 # Com
 
-Qué es coms?
+Qué es com?
 
 ## Modules
 

@@ -23,6 +23,7 @@ const { AuthError, ExistenceError } = errors
  * @throws {ExistenceError} On non-existing user
  * @throws {AuthError} On wrong credentials
  */
+
 export default (email, password) => {
 	validateEmail(email)
 	validatePassword(password)

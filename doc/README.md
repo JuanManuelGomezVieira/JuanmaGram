@@ -2,11 +2,7 @@
 
 ## Intro
 
-Qué hace esta app?
-
-blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-
-![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExczcza2g1aHcxem1lMDZjYmc2bmlzbXNxZTA2MGpscDQ2bzJlYXB3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q8COxfEcyDdwJQIBan/giphy.gif)
+A soft copy from Instagram to test my knowledge
 
 ## Functional description
 
@@ -41,7 +37,7 @@ Post
 
 ### Test Coverage
 
-Incluir imagen de resultados testing test coverage
+TODO Incluir imagen de resultados testing test coverage
 
 ## Planning
 
